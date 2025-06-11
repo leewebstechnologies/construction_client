@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import "./navbar.scss";
+import styles from "./navbar.module.css";
 import Image from "next/image";
 import logo from "../../../images/logo.png";
 import { useState } from "react";
@@ -8,117 +8,129 @@ import { useState } from "react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="navbar">
+    <div className={styles.container}>
       <Link href="/">
-        <Image src={logo} alt="logo" />
+        <Image className={styles.logo} src={logo} alt="logo" />
       </Link>
-      <ul className="list">
-        <li className="listItem">
-          <Link className="item" href="/">
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
+          <Link className={styles.item} href="/">
             Home
           </Link>
         </li>
-        <li className="listItem">
-          <Link className="item" href="/about">
+        <li className={styles.listItem}>
+          <Link className={styles.item} href="/about">
             About Us
           </Link>
         </li>
-        <li className="listItem">
-          <Link className="item" href="/portfolio">
+        <li className={styles.listItem}>
+          <Link className={styles.item} href="/portfolio">
             Portfolio
           </Link>
         </li>
-        <li className="listItem">
-          <Link className="item" href="/blog">
+        <li className={styles.listItem}>
+          <Link className={styles.item} href="/blog">
             Blog
           </Link>
         </li>
-        <li className="listItem">
-          <Link className="item" href="/contact">
+        <li className={styles.listItem}>
+          <Link className={styles.item} href="/contact">
             Contact Us
           </Link>
         </li>
       </ul>
-      <ul className="socialMediaIcons">
-        <li className="socialMediaIcon">
-          <Link className="icon" href="https://web.facebook.com/Lacreteconcept">
+      <ul className={styles.socialMediaIcons}>
+        <li className={styles.socialMediaIcon}>
+          <Link
+            className={styles.icon}
+            href="https://web.facebook.com/Lacreteconcept"
+          >
             <i className="icon fa-brands fa-square-facebook"></i>
           </Link>
         </li>
-        <li className="socialMediaIcon">
+        <li className={styles.socialMediaIcon}>
           <Link
-            className="icon"
+            className={styles.icon}
             href="https://www.tiktok.com/@lacrete_concept?_t=ZM-8tR5goUupDp&_r=1"
           >
             <i className="icon fa-brands fa-tiktok"></i>
           </Link>
         </li>
-        <li className="socialMediaIcon">
-          <Link className="icon" href="https://www.instagram.com/lacrete2025">
+        <li className={styles.socialMediaIcon}>
+          <Link
+            className={styles.icon}
+            href="https://www.instagram.com/lacrete2025"
+          >
             <i className="icon fa-brands fa-square-instagram"></i>
           </Link>
         </li>
-        <li className="socialMediaIcon">
-          <Link className="icon" href="https://wa.me/+2348028752742">
+        <li className={styles.socialMediaIcon}>
+          <Link className={styles.icon} href="https://wa.me/+2348028752742">
             <i className="icon fa-brands fa-square-whatsapp"></i>
           </Link>
         </li>
       </ul>
-      <div className="hamburger" onClick={() => setOpen(!open)}>
-        <div className="line" />
-        <div className="line" />
-        <div className="line" />
+      <div className={styles.hamburger} onClick={() => setOpen(!open)}>
+        <div className={styles.line} />
+        <div className={styles.line} />
+        <div className={styles.line} />
       </div>
       <ul
         onClick={() => setOpen(false)}
-        className="menu"
+        className={styles.menu}
         style={{ right: open ? "0px" : "-50vw" }}
       >
-        <li className="menuItem">
-          <Link className="item" href="/">
+        <li className={styles.menuItem}>
+          <Link className={styles.item} href="/">
             Home
           </Link>
         </li>
-        <li className="menuItem">
-          <Link className="item" href="/about">
+        <li className={styles.menuItem}>
+          <Link className={styles.item} href="/about">
             About Us
           </Link>
         </li>
-        <li className="menuItem">
-          <Link className="item" href="/portfolio">
+        <li className={styles.menuItem}>
+          <Link className={styles.item} href="/portfolio">
             Portfolio
           </Link>
         </li>
-        <li className="menuItem">
-          <Link className="item" href="/blog">
+        <li className={styles.menuItem}>
+          <Link className={styles.item} href="/blog">
             Blog
           </Link>
         </li>
-        <li className="menuItem">
-          <Link className="item" href="/contact">
+        <li className={styles.menuItem}>
+          <Link className={styles.item} href="/contact">
             Contact Us
           </Link>
         </li>
-        <li className="menuItem">
-          <Link className="icon" href="https://web.facebook.com/Lacreteconcept">
+        <li className={styles.menuItem}>
+          <Link
+            className={styles.icon}
+            href="https://web.facebook.com/Lacreteconcept"
+          >
             <i className="icon fa-brands fa-square-facebook"></i>
           </Link>
         </li>
-        <li className="menuItem">
+        <li className={styles.menuItem}>
           <Link
-            className="icon"
+            className={styles.icon}
             href="https://www.tiktok.com/@lacrete_concept?_t=ZM-8tR5goUupDp&_r=1"
           >
             <i className="icon fa-brands fa-tiktok"></i>
           </Link>
         </li>
-        <li className="menuItem">
-          <Link className="icon" href="https://www.instagram.com/lacrete2025">
+        <li className={styles.menuItem}>
+          <Link
+            className={styles.icon}
+            href="https://www.instagram.com/lacrete2025"
+          >
             <i className="icon fa-brands fa-square-instagram"></i>
           </Link>
         </li>
-        <li className="menuItem">
-          <Link className="icon" href="https://wa.me/+2348028752742">
+        <li className={styles.menuItem}>
+          <Link className={styles.icon} href="https://wa.me/+2348028752742">
             <i className="icon fa-brands fa-square-whatsapp"></i>
           </Link>
         </li>
@@ -127,3 +139,34 @@ const Navbar = () => {
   );
 };
 export default Navbar;
+
+{
+  /* <ul className={styles.socialMediaIcons}>
+  <li className={styles.socialMediaIcon}>
+    <Link
+      className={styles.icon}
+      href="https://web.facebook.com/Lacreteconcept"
+    >
+      <i className="icon fa-brands fa-square-facebook"></i>
+    </Link>
+  </li>
+  <li className={styles.socialMediaIcon}>
+    <Link
+      className={styles.icon}
+      href="https://www.tiktok.com/@lacrete_concept?_t=ZM-8tR5goUupDp&_r=1"
+    >
+      <i className="icon fa-brands fa-tiktok"></i>
+    </Link>
+  </li>
+  <li className={styles.socialMediaIcon}>
+    <Link className={styles.icon} href="https://www.instagram.com/lacrete2025">
+      <i className="icon fa-brands fa-square-instagram"></i>
+    </Link>
+  </li>
+  <li className={styles.socialMediaIcon}>
+    <Link className={styles.icon} href="https://wa.me/+2348028752742">
+      <i className="icon fa-brands fa-square-whatsapp"></i>
+    </Link>
+  </li>
+</ul>; */
+}

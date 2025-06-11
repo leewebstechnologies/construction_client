@@ -1,0 +1,25 @@
+.mainTitle {
+  font-size: 100px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.selectTitle {
+  margin: 20px 0;
+}
+
+.items {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  border: 5px solid #bbb;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}

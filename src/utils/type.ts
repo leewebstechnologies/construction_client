@@ -7,4 +7,20 @@ export type hero = {
   subtitle: string;
 };
 
+export type testimonial = {
+  id: number;
+  comment: string;
+  image: StaticImageData;
+  name: string;
+  position: string;
+  rating: string; 
+}
+
+export type team = {
+  id: number;
+  image: StaticImageData;
+  name: string;
+  position: string;
+};
+
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./hero.scss";
+import "./hero.css";
 import { heroData } from "@/app/data";
 
 const Hero = () => {
