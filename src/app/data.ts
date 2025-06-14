@@ -115,42 +115,35 @@ export const services = [
   },
 ];
 
-
-export const projectData = {
-  Residential: [
-    {
-      title: "Modern Villa",
-      image: "../images/1.png",
-      description: "Luxurious residential home.",
-    },
-    {
-      title: "Urban Housing",
-      image: "../images/2.png",
-      description: "High-rise apartment complex.",
-    },
-  ],
-  Commercial: [
-    {
-      title: "Office Tower",
-      image: "../images/3.png",
-      description: "Downtown business hub.",
-    },
-    {
-      title: "Retail Center",
-      image: "../images/4.png",
-      description: "Shopping mall complex.",
-    },
-  ],
-  Infrastructure: [
-    {
-      title: "Bridge Project",
-      image: "../images/5.png",
-      description: "State-of-the-art suspension bridge.",
-    },
-    {
-      title: "Highway Expansion",
-      image: "../images/6.png",
-      description: "Multi-lane highway system.",
-    },
-  ],
-};
+export const categoryData = [
+  {
+    id: 1,
+    title: "Mansion",
+    desc: "Mansion at Ikoyi, Lagos",
+    image: "../images/1.png",
+  },
+  {
+    id: 2,
+    title: "School",
+    desc: "Primary School at Ikoyi, Lagos",
+    image: "../images/2.png",
+  },
+  {
+    id: 3,
+    title: "Health Center",
+    desc: "Modern Health Center at Ikoyi, Lagos",
+    image: "../images/3.png",
+  },
+  {
+    id: 4,
+    title: "Founadtion",
+    desc: "Mansion at Ikoyi, Lagos",
+    image: "../images/4.png",
+  },
+  {
+    id: 5,
+    title: "Mansion",
+    desc: "Mansion at Ikoyi, Lagos",
+    image: "../images/5.png",
+  },
+];

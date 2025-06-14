@@ -1,10 +1,10 @@
-.mainTitle {
-  font-size: 100px;
+.container {
+  margin: 0 auto 100px auto;
+  padding: 0 60px;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 60px;
+.mainTitle {
+  font-size: 100px;
 }
 
 .selectTitle {
@@ -17,9 +17,35 @@
 }
 
 .item {
-  border: 5px solid #bbb;
+  border: 5px solid #25b60f;
   border-radius: 5px;
   width: 300px;
-  height: 300px;
+  height: 400px;
   position: relative;
+  background-size: cover !important;
+}
+
+.item:nth-child(1) {
+  background: url("../../images/1.png");
+}
+
+.item:nth-child(2) {
+  background: url("../../images/10.png");
+}
+
+.item:nth-child(3) {
+  background: url("../../images/11.png");
+}
+
+.item:hover .title {
+  color: #000;
+}
+
+.title {
+  position: absolute;
+  color: #fff;
+  right: 10px;
+  bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
 }
