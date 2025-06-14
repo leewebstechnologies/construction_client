@@ -7,8 +7,7 @@ interface CategoryProps {
   params: Record<string, string>;
 }
 
-const Category = ({ params }: CategoryProps) => {
-  console.log("Category params:", params);
+const Category = async ({ params }: CategoryProps) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.catTitle}>{params.category}</h1>
