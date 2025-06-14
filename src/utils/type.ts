@@ -23,4 +23,12 @@ export type team = {
   position: string;
 };
 
+export type category = {
+  id: number;
+  title: string;
+  desc: string;
+  category: string;
+  image: StaticImageData;
+};
+
 

@@ -19,7 +19,11 @@ const Category = ({ params }: CategoryProps) => {
             <p className={styles.desc}>{index.desc}</p>
           </div>
           <div className={styles.imgContainer}>
-            <Image className={styles.img} src={index.image} alt="portfolio" />
+            <Image
+              className={styles.img}
+              src={index.image}
+              alt="portfolio"
+            />
           </div>
         </div>
       ))}

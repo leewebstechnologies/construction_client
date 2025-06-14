@@ -3,8 +3,14 @@ import banner2 from "../images/banner-2.jpg";
 import banner3 from "../images/banner-3.jpg";
 import avatar from "../images/avatar.png";
 import member from "../images/testimonial3.jpg";
+import portfolio1 from "../images/1.png";
+import portfolio2 from "../images/2.png";
+import portfolio3 from "../images/3.png";
+import portfolio4 from "../images/4.png";
+import portfolio5 from "../images/5.png";
 
-import { hero, testimonial, team } from "@/utils/type"; //Destructuring
+
+import { hero, testimonial, team, category } from "@/utils/type"; //Destructuring
 
 export const heroData: hero[] = [
   {
@@ -115,35 +121,40 @@ export const services = [
   },
 ];
 
-export const categoryData = [
+export const categoryData: category[]= [
   {
     id: 1,
     title: "Mansion",
     desc: "Mansion at Ikoyi, Lagos",
-    image: "../images/1.png",
+    category: "Residential",
+    image: portfolio1,
   },
   {
     id: 2,
     title: "School",
     desc: "Primary School at Ikoyi, Lagos",
-    image: "../images/2.png",
+    category: "Educational",
+    image: portfolio2,
   },
   {
     id: 3,
     title: "Health Center",
     desc: "Modern Health Center at Ikoyi, Lagos",
-    image: "../images/3.png",
+    category: "Healthcare",
+    image: portfolio3,
   },
   {
     id: 4,
     title: "Founadtion",
     desc: "Mansion at Ikoyi, Lagos",
-    image: "../images/4.png",
+    category: "Foundation",
+    image: portfolio4,
   },
   {
     id: 5,
     title: "Mansion",
     desc: "Mansion at Ikoyi, Lagos",
-    image: "../images/5.png",
+    category: "Residential",
+    image: portfolio5,
   },
 ];
